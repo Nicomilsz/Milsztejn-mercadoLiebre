@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Mercado liebre</title>
+</head>
+
+<body class="bg-light-grey">
+    <header class="bg-yellow p-1">
+        <h1 class=" w-1">
+            <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+        </h1>
+        <p class="w-1">Acá va la barra de búsqueda</p>
+    </header>
+    <main>
+        <form action="" method="">
+            <div>
+                <label for="personalName">Nombre y Apellido:</label>
+                <input type="text" name="personalName" id="personalName">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="nombreUsuario">@NombreDeUsuario:</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="birthDate">Fecha De Nacimiento:</label>
+                <input type="date" name="birthDate" id="birthDate">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="adress">Direccion:</label>
+                <input type="text" name="adress" id="adress">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="buyerSeller">Tipo de Perfil:</label>
+                <select name="buyerSeller">
+                    <option value="#ff0000" selected>Buyer</option>
+                    <option value="#00ff00" selected>Seller</option>
+                </select>
+            </div>
+            <div>
+                <label for="interestCategories">Categorias de interes:</label>
+                <label for="interestCategories">Electro</label>
+                <input type="checkbox" name="interestCategories" value="Electro">
+                <label for="interestCategories">Moda</label>
+                <input type="checkbox" name="interestCategories" value="Moda">
+                <label for="interestCategories">Hogar</label>
+                <input type="checkbox" name="interestCategories" value="Hogar">
+                <label for="interestCategories">Jugueteria</label>
+                <input type="checkbox" name="interestCategories" value="Jugueteria">
+                <label for="interestCategories">Vida sana</label>
+                <input type="checkbox" name="interestCategories" value="Vida sana">
+            </div>
+            <div>
+                <label for="imagenDePerfil">Foto:</label>
+                <input type="file" name="avatar" accept=".jpg, .png">
+            </div>
+            <div>
+                <label for="passwordUsuario">Contraseña:</label>
+                <input type="password" name="passwordUsuario" id="passwordUsuario">
+            </div>
+            <div>
+                <label for="passwordUsuario">Confirmar Contraseña:</label>
+                <input type="password" name="passwordUsuario" id="passwordUsuario">
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+
+        </form>
+    </main>
+</body>
+
+
+</html>
