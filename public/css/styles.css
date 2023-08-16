@@ -48,14 +48,173 @@
     border-color: #ebebeb;
   }
   
+
+.articulos{
+  display: flex;
+}
+
+
+
   /* tablet */
-  @media (min-width: 520px) {
-    .md-product-shadow {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+  @media (min-width: 361px) {
+    .articulos-ultima-vista{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }  
+    .articulo{
+      width: 43%;
+  }
     /* TODO: esconder descripción */
   }
   
   /* desktop */
-  @media (min-width: 1280px) {
+  @media (min-width: 769px) {
+    .articulos-ultima-vista{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .articulo{
+      width: 22%;
   }
+  }
+
+
+
+
+
+  /* ------------ */
+.imagen-producto{
+    width: 100%;
+    }
+
+.articulo{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    padding-bottom: 1px;
+    flex-direction: column;
+    transition-property: all;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+
+  .caracteristicas{
+    position: relative;
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    }
+
+.precio{
+    font-size: 18px;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+      }
+.descripcion{
+    font-size: 16px;
+    display: none;
+    background-color: white;
+    margin-top: 5px;
+    transition: all 1s;
+        }
+.descuento{
+  font-size: 16px;
+  color: rgb(9, 180, 3);
+  width: 70%;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+      }
+
+.precioDescuento{
+  display: flex;
+  padding-top: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+    }
+
+    .logoEnvio{
+      color: rgb(0, 150, 0,.9);
+      position: absolute;
+      right: 8%;
+      top: -15px;
+      padding: 5px;
+      border-width: 2px;
+      border-color: rgb(0, 150, 0,.9);
+      border-style: solid;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: white;
+      transition-property: all;
+      transition-duration: 0.5s;
+  }
+.articulos-oferta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* header */
+
+.contenedor-banner{
+  display: flex;
+}
+.banner{
+  width: 100%;
+}
+
+.top-header{
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo{
+  padding: 10px;
+  width: 50%;
+}
+
+.busqueda{
+  width: 44%;
+  height: 30px;
+  margin-right: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #EAC926;
+  align-items: center;
+  align-self: center;
+}
+.cajaBusqueda{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.barraBusqueda{
+  width: 90%;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  margin-right: 3px;
+}
+.lupa{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.txtCuotas{
+  font-size: 0.8em;
+  font-weight: bold;
+}
